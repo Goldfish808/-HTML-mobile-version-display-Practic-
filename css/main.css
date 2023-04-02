@@ -1,0 +1,404 @@
+@charset "utf-8";
+
+#wrap{}
+#wrap_area{
+  width:800px;
+  height: 1700px;
+  margin:0 auto;
+  background: url(../img/backg.png) no-repeat right;
+  position: relative;
+}
+
+
+
+
+
+#header{width:800px; margin:0 auto;
+  position: relative;
+}
+.header_inner{
+  width:800px;
+  height:150px;
+  display:-webkit-flex;
+  display:flex;
+  border-bottom:1px solid #ffe;
+  align-items: center;
+}
+.profile{ /* width:800px;  height: 150px;*/
+  width:400px;
+}
+.profile img{
+  width: 88px; height: 88px;
+  border-radius: 88px;
+  
+  margin-left: 20px;
+}.profile a:hover img{
+  width:86px; height: 86px;
+  border:1px solid rgba(222, 248, 172,0.88);
+  transform:scale(1.1);
+}
+
+/* <!-- .popview_j --> */
+
+.popview_j{
+  width:800px; height: 800px;
+  position:absolute; top:100%;
+  background: url(../img/back.jpg) no-repeat; 
+  background-color:rgba(255, 255, 255, 0.8);
+  background-size:100%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}.profile a:hover span{
+  opacity: 1;
+  z-index: 1;
+}
+
+
+
+
+
+#header .gnb{}
+#header .gnb ul{
+  width:400px;
+  display:-webkit-flex;
+  justify-content: space-between;
+  display:flex;
+
+}
+#header .gnb ul li{
+  width:120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: rgba(238, 238, 255, 0.22);
+  border-radius: 8px;
+  font-weight: 900;
+  color: #888;
+}#header .gnb ul li:last-child{margin-right: 30px;}
+
+#header .gnb ul li:hover{background: rgba(255, 255, 255, 0.88);}
+#header .gnb ul li a{
+  display: block;
+  width:120px;
+}
+
+
+
+
+        /* .main_visual 시작 */
+#main_visual{
+  width:760px; height:340px; margin:20px auto 30px;
+}
+.left{
+  width:20px; 
+  background: url(../img/iconinc.png);
+  background-position:-395px 208px;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 170px;
+}.left a{display:block;}
+.right{
+  width:20px;
+  background: url(../img/iconinc.png);
+  background-position:-375px 208px;
+  position: absolute;
+  margin-left: 760px;
+  margin-top: 170px;
+}.right a{display:block;}
+
+.main_daily{
+  background: rgba(221, 221, 221, 0.5);
+  
+  border-radius:15px; padding:15px 0;
+}
+.main_daily .dayview{width: 760px;}
+.main_daily .dayview a{
+  width: 80px; line-height: 40px;
+  display: block;
+  background: rgba(238, 238, 255, 0.8);
+  text-align: center;
+  border-radius: 15px;
+  margin:0px auto;
+}
+.main_daily .dayview h2{
+  font-size: medium; margin-bottom:-5px;
+}.main_daily .dayview a:hover{background: #fff;}
+.main_daily .dayview h3{width: 35px; margin:0 auto;
+  font-size:30px; border-top: 1px solid rgba(136, 136, 136, 0.8);
+}
+
+.main_daily .time_log .tlcontents{
+  width:760px;
+  display:-webkit-flex;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 20px;
+}
+.main_daily .time_log .tlcontents li{
+  width: 230px; height: 200px;
+  background: rgba(238, 238, 255, 0.8);
+  border-radius:15px;
+  margin:0 15px;
+}.main_daily .time_log .tlcontents li:hover{
+/*  width:240px; height: 210px; margin-bottom: -10px;*/
+  transform:scale(1.1);
+}
+
+.main_daily .time_log li a{
+  height: 200px;
+  display:block;
+  margin: 15px;
+}
+.main_daily .time_log strong{
+  line-height: 30px;
+  font-size: large;
+}
+.main_daily .time_log p{
+  border-top: 0.5px solid rgba(136, 136, 136, 0.404);
+  border-bottom: 0.5px solid  rgba(136, 136, 136, 0.404);
+  padding:10px 0;
+  height: 60px;
+}
+.main_daily .time_log .dot{
+  display:-webkit-flex;
+  justify-content: center;
+  display: flex;
+}
+.main_daily .time_log .dot li{
+  width:10px; height:10px; background:#fff; 
+  margin:15px 5px 0px;; border-radius:50%;
+}.main_daily .time_log .dot li:nth-child(2){
+  background: #99f;
+}
+
+          /* .time_log 끝 */
+          /* .journey 끝 */
+
+
+
+
+
+          /* #side_visual 시작 */
+
+#side_visual{
+  width:760px; height: 400px;
+  background: rgba(221, 221, 221, 0.5);
+  margin:0 auto;
+  border-radius:15px;
+}
+#side_visual a{display: block;}
+.journey{
+  width:740px; height:100px;
+  /*background: rgb(134, 248, 68);임시값*/
+  display:-webkit-flex;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.journey .j_daybox{
+  width:80px; height:80px; background: rgba(238, 238, 255, 0.8);
+  text-align: center;
+  line-height: 40px;
+  border-radius: 15px;
+  margin-left: -20px;
+}
+.journey .j_daybox h2{
+  font-size: medium; margin-bottom:-5px;
+}.journey .j_daybox:hover{background: #fff;}
+
+.journey .j_daybox h3{width: 35px; margin:0 auto;
+  font-size:30px; border-top: 1px solid rgba(136, 136, 136, 0.8);
+}
+.j_date{
+  width: 160px; height: 40px; line-height: 40px;
+  text-align: center;
+}
+.j_date a{}
+.j_elements{}
+.j_elements ul{width:446px;}
+.j_elements ul li{
+  width:49%; height:40px; float:left;
+  background: rgba(238, 238, 255, 0.8);
+  line-height: 40px;
+  margin:2.5px;
+  text-align: center;
+  border-radius: 10px; 
+}.j_elements ul li:nth-child(2n){margin-right:0;}
+.j_elements ul li:hover a{
+  background:rgba(238, 238, 255, 0.8); border-radius: 10px;
+}
+.j_elements ul li a{}
+.noti{
+  width:18px; height:18px;
+  line-height: 16px; font-size:14px;
+  font-weight: bold;
+  color:#eee;
+  background: rgba(255, 39, 39,0.8);
+  display:block;
+  border-radius:50%;
+  position: relative; left:741px;
+}
+
+
+
+
+
+
+          /* #container 시작 */
+#container{width:800px;}
+
+.select_box{
+  width: 185px; height: 30px; margin:10px auto 10px;
+}
+.select_box .select-box {
+  width:100%; height: 100%;
+  padding: 0 20px 0 9px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  color:#eee;
+  cursor: pointer;
+  background-position: calc(100% - 10px) center;
+  background-repeat: no-repeat;
+  background-size: 11px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.select_box .select-box option{
+  color:#333; text-align: left;
+}
+
+/* 공간 지정까지 했음. 2022-07-14 11:32 */
+
+.feed_phoarea{
+  width:100%; height: 532px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(222, 248, 172,0.88);
+}
+
+.feed_phoarea ul{
+  display:-webkit-flex;
+  justify-content: space-between;
+  display:flex;
+}
+.feed_phoarea .feed_box{
+  width:265px; height: 265px; margin-bottom:2px;
+}
+.feed_phoarea .feed_box .feed_img img{
+  width:100%; height: 100%;
+}
+.feed_phoarea .feed_box .feed_txt{
+  width:100%; height:100%;
+  display: block;
+  background:rgba(51, 51, 51, 0.00);
+  position:relative; left: 50%; top:-100%;
+  transform:translate(-50%,0);
+}.feed_phoarea .feed_box .feed_txt p{
+  position:absolute; top: 50%; left:50%;
+  transform:translate(-50%, 0);
+  opacity:0;
+}
+
+
+.feed_phoarea .feed_box .feed_txt:hover{
+  background:rgba(51, 51, 51, 0.2);
+}.feed_phoarea .feed_box .feed_txt:hover p{opacity:1;color:#fff}
+
+          /* #container 끝 */
+
+
+
+
+
+#footer{}
+
+#favDialog{
+  width:500px; height:500px; 
+  margin:auto auto;   background: #eee;
+  border:none;
+  /* position: fixed;
+  top: 50%;
+  transform: translate(0, -50%); */
+}
+
+button{ border:none; background: rgba(255,255,255,0.5); cursor:pointer;}
+
+      /* 푸터 버튼 눌렀을때 나오는 창 CSS */
+/* .space{width:60%; margin:25% auto;  background: rgba(255,255,255,0.5); border-radius: 10px;}
+.cancel{
+  width:100%; height:100%; background:rgba(153,153,255,0.1);
+  position:absolute; top:0; left:0; z-index:-1;
+}  */
+
+.foot_menu{
+  width:800px;
+  margin: 20px 20% 20px;
+}
+.updateDetailss{
+  width:240px; height: 50px;
+  font-size:24px;
+  border-radius: 10px;
+}.updateDetailss:hover{background:rgba(0,0,0,0.1);}
+
+.dialog{
+  width:335px;
+  height:400px;
+  background: rgba(255, 255, 255, 0.88);
+  margin:0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  border-radius: 10px;
+  padding:45px 45px 40px 45px; 
+}
+
+fieldset{ border: none; }
+legend{ display:none;}
+.login{
+  border-bottom: 2px solid #333;
+}
+.login input{
+  width:100%; border:none;
+  background:none; height: 60px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.login label{display: none;}
+
+.check{
+  font-size:14px;
+  padding:14px 0;
+
+}
+.check label{
+  display:inline-block;
+  margin:0 30px 0 0;
+}
+.check input[type="checkbox"]{
+  margin:3px 5px 0 0;
+}
+
+#footer .info{
+  width:380px;
+  margin:0 10px;
+  display: inline-block;
+}
+.btn_login input{
+  width:100%; height:55px;
+  background:#0af;
+  color:#fff;
+  font-size:16px;
+  border:none;
+  cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
